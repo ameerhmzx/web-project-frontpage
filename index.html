@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="shortcut icon" type="image/jpg" href="./icons/fav.png" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="header-left">
+            <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                    clip-rule="evenodd" />
+            </svg>
+            <p>Photos</p>
+        </div>
+        <div class="header-right">
+            <div id="search-bar">
+                <input type="text" placeholder="Search"/>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="button">
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p>Upload</p>
+            </div>
+        </div>
+    </div>
+    <!-- NAVIGATION -->
+    <div id="navigation">
+        <ul>
+            <li class="active"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg><p>Your Photos</p></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+              </svg><p>Shared With You</p></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg><p>Albums</p></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg><p>Settings</p></li>
+        </ul>
+    </div>
+    <div id="display-container">
+        <h1>Your Photos</h1>
+        <h2 class="date">07-03</h2>
+        <div class="photos-container">
+            <img src="images/image (1).jpg">
+            <img src="images/image (2).jpg">
+            <img src="images/image (3).jpg">
+            <img src="images/image (4).jpg">
+            <img src="images/image (5).jpg">
+            <img src="images/image (6).jpg">
+            <img src="images/image (7).jpg">
+            <img src="images/image (8).jpg">
+            <img src="images/image (9).jpg">
+            <img src="images/image (10).jpg">
+            <img src="images/image (11).jpg">
+            <img src="images/image (12).jpg">
+            <img src="images/image (13).jpg">
+        </div>
+
+        <h2 class="date">01-01</h2>
+        <div class="photos-container">
+            <img src="images/image (14).jpg">
+            <img src="images/image (15).jpg">
+            <img src="images/image (16).jpg">
+            <img src="images/image (17).jpg">
+            <img src="images/image (18).jpg">
+            <img src="images/image (19).jpg">
+            <img src="images/image (20).jpg">
+            <img src="images/image (21).jpg">
+            <img src="images/image (22).jpg">
+        </div>
+
+        <h2 class="date">29-11-20</h2>
+        <div class="photos-container">
+            <img src="images/image (23).jpg">
+            <img src="images/image (24).jpg">
+            <img src="images/image (25).jpg">
+            <img src="images/image (26).jpg">
+            <img src="images/image (28).jpg">
+            <img src="images/image (29).jpg">
+            <img src="images/image (30).jpg">
+            <img src="images/image (31).jpg">
+            <img src="images/image (32).jpg">
+            <img src="images/image (33).jpg">
+            <img src="images/image (34).jpg">
+            <img src="images/image (35).jpg">
+        </div>
+
+        <h2 class="date">11-5-20</h2>
+        <div class="photos-container">
+            <img src="images/image (36).jpg">
+            <img src="images/image (37).jpg">
+            <img src="images/image (38).jpg">
+            <img src="images/image (39).jpg">
+            <img src="images/image (40).jpg">
+            <img src="images/image (41).jpg">
+            <img src="images/image (42).jpg">
+            <img src="images/image (43).jpg">
+            <img src="images/image (44).jpg">
+            <img src="images/image (45).jpg">
+            <img src="images/image (46).jpg">
+            <img src="images/image (47).jpg">
+            <img src="images/image (48).jpg">
+        </div>
+    </div>
+</body>
+
+</html>
